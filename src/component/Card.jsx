@@ -5,7 +5,7 @@ export default function Card({ name, img, key, id }) {
     console.log(name);
   }
   return (
-    <div className="card_item" onClick={handle}>
+    <div className="card_item" key={key} onClick={handle}>
       <img src={img} alt="logo" width="200px" />
       <div>{name}</div>
       <div>{id}</div>

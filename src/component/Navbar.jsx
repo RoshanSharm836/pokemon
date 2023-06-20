@@ -5,14 +5,19 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <NavLink to={`/`}>
-        <div>Home</div>
+        <img src="../pokelogo.png" alt="logo" width="150px" srcset="" />
       </NavLink>
-      <NavLink to={`/all`}>
-        <div>all pokemon</div>
-      </NavLink>
-      <NavLink to={`/bookmark`}>
-        <div>bookmark</div>
-      </NavLink>
+      <div>
+        <NavLink to={`/`}>
+          <div>Home</div>
+        </NavLink>
+        <NavLink to={`/all`}>
+          <div>all pokemon</div>
+        </NavLink>
+        <NavLink to={`/bookmark`}>
+          <div>bookmark</div>
+        </NavLink>
+      </div>
     </nav>
   );
 }
